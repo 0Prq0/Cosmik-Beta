@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Cosmik Bot</h1>
+<link rel="stylesheet" href="index.css">
+<input style="width: 300px; height: 75px; color: blueviolet; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: 20px; background-color: rgba(137, 43, 226, 0.452);" type="text" id="userInput" placeholder="Type your command here...">
+<button onclick="getResponse()">Send</button>
+
+<h1 id="botResponse"></h1>
+<script>
+function getResponse() {
+  var input = document.getElementById("userInput").value;
+  var output = document.getElementById("botResponse");
+
+  switch(input) {
+    case 'Secret': 
+      output.innerHTML = 'There is a secret debug mode still in the game.';
+      break;
+    case '!apply':
+      output.innerHTML = ' DM _prq_ on discord to apply for helper.';
+      break;
+    case '!token': 
+      output.innerHTML = 'Get tokens by either claiming daily tokens, selling blooks or auctioning them';
+      break;
+    case 'ID:889107267782818891821864849876218981764984398272467498898834777738299199': // replace 'command4' with your actual command
+      output.innerHTML = 'Debug Command Sent';
+      break;
+    case '!auction': 
+      output.innerHTML = 'You can either sell things or put them up for auction your choice.';
+      break;
+      case '!user': 
+      output.innerHTML = 'We have 52 members in cosmik!';
+      break;
+      case '!Ping': 
+      output.innerHTML = 'Ping Pong';
+      break;
+      
+    default:
+      output.innerHTML = 'Command not recognized.';
+  }
+}
+</script>
+
+</body>
+</html>

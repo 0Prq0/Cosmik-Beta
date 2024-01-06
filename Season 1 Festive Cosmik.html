@@ -1,0 +1,109 @@
+<!DOCTYPE html> 
+<html>
+    <body>
+        <link rel="stylesheet" href="item shop.js">
+        <link rel="stylesheet" href="S1FC.css">
+        <link rel="icon" type="image/x-icon" href="../static/Imgs//Favicon.jpg">
+
+        <link rel="stylesheet" href="index.css">
+        <head>
+         
+
+        <a href="index.html">
+            <button>Home</button>
+        </a>
+        
+        <div style="background-color: rgba(0, 0, 255, 0.452); width: 300px; height: 500px;">
+            <h1 style="margin: 10px; text-indent: 55px;">Rainbow Snow Man</h1>
+            <h1 style="margin: 10px; text-indent: 75px; color: rgb(162, 0, 255);">Mystical</h1>
+<img style="width: 150px; margin: 75px;" src="Rainbow_Sweater_Snowman.gif" alt="">
+            <button  onclick="useTokens(50000); buySomething();" style="margin: 15px;">50000 Stars</button>
+        </div>  
+        <div style="background-color: rgba(0, 0, 255, 0.452); width: 300px; height: 500px; margin-left: 325px; margin-top: -500px;">
+            <h1 style="margin: 10px; text-indent: 65px;">Party Santa</h1>
+            <h1 style="margin: 10px; text-indent: 75px; color: cyan;">Chroma</h1>
+<img style="width: 150px; margin: 75px;" src="Party_Santa.webp" alt="">
+            <button  onclick="useTokens(15000); buySomething();" style="margin: 15px;">15000 Stars</button>
+        </div>  
+        <div style="background-color: rgba(0, 0, 255, 0.452); width: 300px; height: 500px; margin-left: 650px; margin-top: -500px;">
+            <h1 style="margin: 10px; text-indent: 65px;">Golden Wreath</h1>
+            <h1 style="margin: 10px; text-indent: 75px; color: rgb(229, 255, 0);">Legendary</h1>
+<img style="width: 150px; margin: 75px;" src="Golden_Wreath (1).webp" alt="">
+            <button  onclick="useTokens(3500); buySomething();" style="margin: 15px;">3500 Stars</button>
+        </div>  
+        <div style="background-color: rgba(0, 0, 255, 0.452); width: 300px; height: 500px; margin-left: 975px; margin-top: -500px;">
+            <h1 style="margin: 10px; text-indent: 80px;">Catlodon</h1>
+            <h1 style="margin: 10px; text-indent: 75px; color: rgb(229, 255, 0);">Legendary</h1>
+<img style="width: 150px; margin: 75px;" src="Cat_Shark.webp" alt="">
+            <button  onclick="useTokens(3500); buySomething();" style="margin: 15px;">3500 Stars</button>
+        </div>  
+        <div style="background-color: rgba(0, 0, 255, 0.452); width: 300px; height: 500px; margin-left: 1300px; margin-top: -500px;">
+            <h1 style="margin: 10px; text-indent: 100px;">Lost Bot</h1>
+            <h1 style="margin: 10px; text-indent: 100px; color: rgba(0, 255, 170, 0.582);">Cosmik</h1>
+<img style="width: 150px; margin: 75px;" src="Lost Bot.png" alt="">
+            <button  onclick="useTokens(75000); buySomething();" style="margin: 15px;">75000 Stars</button>
+        </div>  
+        <div style="background-color: rgba(0, 0, 255, 0.452); width: 300px; height: 500px; margin-left: 1300px; margin-top: 50px;">
+            <h1 style="margin: 10px; text-indent: 75px;">Santa Snowman</h1>
+            <h1 style="margin: 10px; text-indent: 75px; color: rgba(0, 204, 255, 0.582);">Chroma</h1>
+<img style="width: 150px; margin: 75px;" src="Santa_Snowman.webp" alt="">
+            <button  onclick="useTokens(15000); buySomething();" style="margin: 15px;">15000 Stars</button>
+        </div>  
+        <div style="background-color: rgba(0, 0, 255, 0.452); width: 300px; height: 500px; margin-left: 975px; margin-top: -500px;">
+            <h1 style="margin: 10px; text-indent: 100px;">Prq</h1>
+            <h1 style="margin: 10px; text-indent: 75px; color: rgba(0, 255, 170, 0.582);">Developer</h1>
+<img style="width: 600px; margin: 75px; margin-left: -160px; margin-top: -10px;" src="Prq.webp" alt="">
+            <button  onclick="useTokens(150000); buySomething();" style="margin: 15px; margin-top: -50px;">150000 Stars</button>
+        </div>  
+        <div style="background-color: rgba(0, 0, 255, 0.452); width: 300px; height: 500px; margin-left: 650px; margin-top: -500px;">
+          <h1 style="margin: 10px; text-indent: 80px;">Octayden</h1>
+          <h1 style="margin: 10px; text-indent: 75px; color: rgba(11, 19, 16, 0.582);">Cosmetical</h1>
+<img style="width: 150px; margin: 75px; margin-left: 75px; margin-top: -10px;" src="Octayden.webp" alt="">
+          <button  onclick="useTokens(30000); buySomething();" style="margin: 15px; margin-top: -50px;">30000 Stars</button>
+      </div>   
+      <div style="background-color: rgba(0, 0, 255, 0.452); width: 300px; height: 500px; margin-left: 325px; margin-top: -500px;">
+        <h1 style="margin: 10px; text-indent: 80px;">Cerulean</h1>
+        <h1 style="margin: 10px; text-indent: 75px; color: rgba(11, 19, 16, 0.582);">OG Pack</h1>
+        <h1 style="margin: 10px; text-indent: 75px; color: rgba(0, 255, 162, 0.582);">Uncommon</h1>
+<img style="width: 150px; margin: 75px; margin-left: 65px; margin-top: 50px;" src="Cerulean.webp" alt="">
+        <button  onclick="useTokens(500); Cosmeticcount()" style="margin: 15px; margin-top: -50px;">500 stars</button>
+    </div>   
+        <h1 style=" font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; margin-top: -500px;">Item shop ends in: 7 Days</h1>
+        <html>
+        <head>
+            <title>Item Shop</title>
+            <style>
+                .tokens {
+                    margin: 10px 0;
+                }
+            </style>
+        </head>
+        <body>
+            <div style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; color: white; margin-left: 1615px; margin-top: -600px; background-color: rgba(0, 0, 255, 0.466);height: 50px" id="tokenCount" class="tokens">Tokens: 0</div>
+            <button style="width: 0px;"  onclick="addTokens(1500)"></button>
+
+        </body>
+        </html>
+        <script>
+            var tokens = localStorage.getItem('tokens') ? parseInt(localStorage.getItem('tokens')) : 0;
+document.getElementById('tokenCount').innerHTML = 'Tokens: ' + tokens;
+
+function addTokens(amount) {
+    tokens += amount;
+    localStorage.setItem('tokens', tokens);
+    document.getElementById('tokenCount').innerHTML = 'Tokens: ' + tokens;
+}
+
+function useTokens(amount) {
+    if (tokens >= amount) {
+        tokens -= amount;
+        localStorage.setItem('tokens', tokens);
+        document.getElementById('tokenCount').innerHTML = 'Tokens: ' + tokens;
+    } else {
+        alert('Not enough tokens.');
+    }
+}
+
+        </script>
+     </body>
+</html>

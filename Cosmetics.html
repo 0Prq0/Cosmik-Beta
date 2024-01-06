@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="/StaticS/cosmetic.js">
+    <link rel="icon" type="image/x-icon" href="/Imgs/Favicon.png">
+
+    <link rel="stylesheet" href="/css/index.css">
+    <title>Cosmetic</title>
+    <a href="/StaticS/index.html">
+        <button>Home</button>
+    </a>
+    
+</head>
+<body>
+  <div style="background-color: rgba(0, 0, 255, 0.473); width: 1000px; height: 750px;">
+    <div style="background-color: rgba(137, 43, 226, 0.479); margin-top: 50px;">
+    <h1 style="margin-left: 30px; margin-top: 50px;">OG Pack</h1>
+            <div>
+      <img style="width: 60px; margin-left: 40px; margin-top: 1px;" src="Cerulean.webp" alt="">
+      <img style="width: 60px; margin-left: 40px; margin-top: 1px;" src="Fries.png" alt="">
+      <img style="width: 60px; margin-left: 40px; margin-top: 0px;" src="Fleainn.webp" alt="">
+      <img style="width: 60px; margin-left: 40px; margin-top:  1px;" src="Blooket_Warrior_1.webp" alt="">
+      <img style="width: 60px; margin-left: 30px; margin-top: 1px;" src="Hawk.png" alt="">
+      <img style="width: 60px; margin-left: 30px; margin-top: 1px;" src="Gameryt.png" alt="">
+      <img style="width: 70px; margin-left: 40px; margin-top: 1px;" src="BaconGen.png" alt="">
+      <img style="width: 60px; margin-left: 30px; margin-top: 1px;" src="ChezyBred.webp" alt="">
+      <img  onclick="ToggleSoundgod()" style="width: 60px; margin-left: 40px; margin-top: -100px;" src="SOUNDGOD.gif" alt="">
+            </div>
+  </div>
+</a>  
+<div style="background-color: rgba(0, 0, 255, 0); width: 1000px; height: 750px;">
+  <div style="background-color: rgba(137, 43, 226, 0.479); margin-top: 50px;">
+  <h1 style="margin-left: 30px; margin-top: 50px;">Science Pack</h1>
+    
+    <img style="width: 50px; margin-left: 40px; margin-top: 1px;" src="science fusion.png" alt="">
+  
+    <img style="width: 50px; margin-left: 40px; margin-top: 1px;" src="Medicine.png" alt="">
+    <img style="width: 75px; margin-left: 40px; margin-top: 1px;" src="magnet.png" alt="">
+    <img style="width: 50px; margin-left: 40px; margin-top: 1px;" src="Data.png" alt="">
+    <img style="width: 90px; margin-left: 40px; margin-top: 1px;" src="science bot.png" alt="">
+</div>
+<div style="background-color: rgba(0, 0, 255, 0.473); width: 1000px; height: 750px;">
+  <div style="background-color: rgba(137, 43, 226, 0.479); margin-top: 50px;">
+  <h1 style="margin-left: 30px; margin-top: 50px;">Shark Pack</h1>
+          <div>
+    <img style="width: 50px; margin-left: 40px; margin-top: 1px;" src="Watermellon_Shark.webp" alt="">
+    <img style="width: 50px; margin-left: 40px; margin-top: 1px;" src="Cat_Shark.webp" alt="">
+    <img style="width: 50px; margin-left: 40px; margin-top: 0px;" src="McDonalds_Shark.webp" alt="">
+    <img style="width: 50px; margin-left: 40px; margin-top: -100px;" src="Rainbow_Shark.gif" alt="">
+          </div>
+</div>
+<div style="background-color: rgba(137, 43, 226, 0.479); margin-top: 50px;">
+  <h1 style="margin-left: 30px; margin-top: 50px;">Cosmeticals</h1>
+    
+    <img  onclick="toggleDiv()" style="width: 50px; margin-left: 40px; margin-top: 1px;" src="ice.png" alt="">
+  
+</div>
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Click to Toggle Div</h2>
+
+
+<div id="SOUNDGOD" style="margin-left: 1100px; background-color: rgba(0, 0, 255, 0.5); width: 500px; height: 500px; margin-top: -800px;">
+  <h1 style="font-size: 50px; margin-left: 120px;">S O U N D G O D</h1>
+  <img style="width: 200px; margin-left: 145px;" src="SOUNDGOD.gif" alt="">
+  <button onclick="MyButton()" style="margin-left: 125px;">Sell</button>
+  <button onclick="Auction()" style="margin-left: 125px;">Auction</button>
+
+<script>
+function Auction() {
+  var UsaulPrice = prompt("How much do u want to Auction Soundgod For? ", "10000");
+  if (UsaulPrice != null) {
+    alert("You auctioned soundgod for " + UsaulPrice + "");
+  }
+}
+</script>
+<script>
+  function MyButton() {
+    if (confirm("Do you want to sell SoundGod for 1000 Stars?")) {
+      alert("SoundGod has been sold!");
+    } else {
+      alert("OK");
+    }
+  }
+</script>
+</div>
+
+
+
+<script>
+  function ToggleSoundgod() {
+    var x = document.getElementById("SOUNDGOD");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+  </script>
+
+
+
+</body>
+</html>
+
+</body>
+</html>
+//Hidden script Below//
+<script>
+  function toggleDiv() {
+    var x = document.getElementById("myDiv");
+    if (x.style.display === "none") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "none";
+    }
+  }
+  </script>
+  <div id="myDiv" style="margin-left: 1100px; background-color: rgba(0, 0, 255, 0.5); width: 500px; height: 500px; margin-top: -800px;">
+    <h1 style="font-size: 50px; margin-left: 180px;">F r o s t</h1>
+    <img style="width: 200px; margin-left: 145px;" src="/IMGS/ice.png" alt="">
+    <button style="margin-left: 125px;">Sell</button>
+    <button style="margin-left: 125px;">Auction</button>
+  </div>
+  

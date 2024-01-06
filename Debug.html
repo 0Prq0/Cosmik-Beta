@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    <button onclick="addTokens(50000000000000000000)">DEBUG</button>
+    <script>
+         var tokens = localStorage.getItem('tokens') ? parseInt(localStorage.getItem('tokens')) : 0;
+document.getElementById('tokenCount').innerHTML = 'Tokens: ' + tokens;
+
+function addTokens(amount) {
+    tokens += amount;
+    localStorage.setItem('tokens', tokens);
+    document.getElementById('tokenCount').innerHTML = 'Tokens: ' + tokens;
+}
+
+function useTokens(amount) {
+    if (tokens >= amount) {
+        tokens -= amount;
+        localStorage.setItem('tokens', tokens);
+        document.getElementById('tokenCount').innerHTML = 'Tokens: ' + tokens;
+    } else {
+        alert('Not enough tokens.');
+    }
+}
+    </script>
+</body>
+</html>
